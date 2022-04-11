@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&family=DM+Sans&family=Hind+Siliguri:wght@300;400&family=Signika+Negative:wght@300&family=Ubuntu:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: url(https://images.pexels.com/photos/1571442/pexels-photo-1571442.jpeg?cs=srgb&dl=pexels-james-wheeler-1571442.jpg&fm=jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1); */
+  background-color: black;
+  font-family: "Catamaran", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Signika Negative", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Card effects for all */
+
+.card-all {
+  display: inline-block;
+  margin: 60px 0 0 3.2%;
+  width: 500px;
+  overflow: hidden;
+  height: 800px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* Cars Info */
+.info {
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.card-all h1,
+li {
+  color: white;
+}
+
+.card-all h1 {
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.card-all li {
+  font-size: 32px;
+  padding: 10px 0 0 20px;
+}
+
+/* McLaren 720S */
+.card {
+  background-position: center;
+  background: url(https://images.unsplash.com/photo-1616451466972-60b201a0c717?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  transition: 0.7s ease-in-out;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Mercedes SLS AMG */
+.card1 {
+  background: url(https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  transition: 0.7s ease-in-out;
+  background-position: -150px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Ferrari Laferrari */
+.card2 {
+  background: url(https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  transition: 0.7s ease-in-out;
+  background-position: -60px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Bugatti Chiron */
+.card3 {
+  background: url(https://images.unsplash.com/photo-1635975229704-0a420e777a56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=673&q=80);
+  transition: 0.7s ease-in-out;
+  background-position: -60px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for all */
+
+.card-all:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.card-all:hover .info {
+  opacity: 1;
+}
+
+/* Hover effect only for Mc Laren */
+.card:hover {
+  background: url(https://images.unsplash.com/photo-1616581932511-65a1392a61e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect only for Mercedes */
+.card1:hover {
+  background: url(https://images.unsplash.com/photo-1598337754162-f54f131b6c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-position: -150px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Hover effect only for Ferrari */
+.card2:hover {
+  background: url(https://images.unsplash.com/photo-1599520447223-9480e5b0dfb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-position: -150px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect only for Bugatti */
+.card3:hover {
+  background: url(https://images.unsplash.com/photo-1635975234936-3d277a5e8cef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-position: -130px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* footer */
+footer {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
